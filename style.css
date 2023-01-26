@@ -18,7 +18,8 @@
 
 body {
     min-height: 100vh;
-    
+    background-color: var(--very-light-gray-clr);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,6 +70,8 @@ main {
     margin-top: .5rem;
     padding: .8em 2em;
     font-family: var(--lexend-deca-font);
+    background-color: var(--very-light-gray-clr);
+
 }
 
 .sedans_btn {
@@ -116,4 +119,3 @@ main {
         margin-bottom: 0;
     }
 }
-
