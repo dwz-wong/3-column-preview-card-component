@@ -12,6 +12,7 @@
     --dark-cyan-clr: hsl(184, 100%, 22%);
     --very-dark-cyan-clr: hsl(179, 100%, 13%);
     /* Neutral */
+    --white-clr: hsl(0, 0%, 100%);
     --transparent-white-clr: hsla(0, 0%, 100%, 0.75); /* paragraphs */
     --very-light-gray-clr: hsl(0, 0%, 95%); /* background, headings, buttons */
 }
@@ -27,11 +28,8 @@ body {
 }
 
 main {
-    /*
-    padding: 0 .5rem;
-    */
     margin-top: 5rem;
-    padding: 0 .5rem;
+    padding: 0 1rem;
 }
 
 .row {
@@ -67,11 +65,19 @@ main {
 
 .card__btn {
     cursor: pointer;
+    border: none;
     margin-top: .5rem;
     padding: .8em 2em;
     font-family: var(--lexend-deca-font);
     background-color: var(--very-light-gray-clr);
+    text-decoration: none;
+}
 
+.card__btn:hover {
+    padding: .65em 2em;
+    border: 2px solid var(--white-clr);
+    color: var(--transparent-white-clr);
+    background-color: transparent;
 }
 
 .sedans_btn {
@@ -88,7 +94,7 @@ main {
 
 @media screen and (min-width: 480px) {
     main {
-        padding: 0 1.5rem;
+        padding: 0 2.2rem;
     }
 }
 
